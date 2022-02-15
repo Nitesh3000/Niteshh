@@ -1,0 +1,96 @@
+List is an ordered collection. 
+
+List can store duplicates.
+
+List can store dis similar elements
+
+We can process elements using indexing and slicing
+Indexing: can access only 1 elemnt at a time
+          Python supports negative indexing also
+
+Slicing: Syntax:
+		[lower_bound:upper_bound]
+		includes LB   excludes UB
+
+		
+		List Functionality
+List a Collection
+List has pre-defined functionality
+These methods used to modify the list
+->insert:
+	>append-----list.append(element)====insterts at last position
+	>insert-----list.insert(position,element)===insert at specified position
+->Delete
+	>pop-----list.pop()===deletes last element
+		 list.pop(position)===deletes element in specified position
+	>remove---list.remove(element)===first occured elemnt in the list is deleted
+	>clear---list.clear()===clears the list but list is present
+	>delete--del list====deletes space from memory
+->Sort
+->Reverse===li.reverse()
+
+
+			READING ELEMENTS IN LIST
+li=list()
+print("Enter 5 numbers: ")
+for i in range (5):
+	element=int(input())
+	li.apppend(element)
+print(li)
+
+
+
+
+li=list()
+print("Enter elemnts (0 to stop): ")
+while True:
+      element=int(input())
+       if elemnt==0:
+       	    break
+	else
+	     li.append(element)
+print("li")
+
+     
+
+			LIST FUNCTIONALITY (MUTABLE OR IMMUTABLE) 
+List is mutable
+Hence we can modify the list after creation
+
+List->append,insert,pop,remove,clear,sort,reverse....  
+list is not constant
+location will be same in the memory
+
+
+Lit elements either Mutable  or Immutable
+		>Immutable--int,string->if these changed inside list then id of that position will alse change
+		>Mutable--list--->id is not changed even if list inside list is changed or modified
+
+
+				STORING IMMUTABLE OBJECTS
+>WHENEVER A CONTENT IS SAME , SEPERATE MEMORY LOCATION IS NOT CREATED
+hence they will point same memory location
+if we modify a content , a new object is created
+for list if we use li1=li.copy()_(copying the list)__li1 will be stored in different location
+
+
+
+				NESTED LISTS IN PYTHON
+>li = [10,20,30,[40,50,60]]
+
+>len(li) will be 4.
+
+>len(li[-1]) will be 3.
+
+>li[len(li)-1] will be [40,50,60]
+
+>li[3][0] will be 40
+
+>li[3][-1] will be 60
+
+>li[3][ : ] will be [40,50,60]
+
+>li[3][0:2] will be [40,50]
+
+>li[2][ : :2 ] will be [40,60]   //[initial position : final position : no. of steps to jump]
+  
